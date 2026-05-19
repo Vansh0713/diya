@@ -1,0 +1,81 @@
+/* React Phone Number Input Styles */
+.PhoneInput {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.PhoneInputCountrySelect {
+  padding: 4px;
+  border: none;
+  background: transparent;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.PhoneInputInput:focus {
+  border-color: #6366f1;
+  ring: 2px solid #6366f1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Card hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
